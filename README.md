@@ -18,6 +18,7 @@ LunarLanderRl/
 ├── qvalue_demo.py          # Zeigt Q-Werte für fixen Zustand
 ├── modell/                 # Gespeicherte Modelle (.pth)
 ├── Gymnasium_Aufgabe.odt   # Word-Dokumentation
+├── images//                # Bilder für readme
 └── reward_plot.png         # Automatisch generierter Trainingsplot
 ```
 
