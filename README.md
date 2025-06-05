@@ -1,7 +1,7 @@
 # LunarLanderRl – Deep Reinforcement Learning Agent mit Gymnasium
 
 Dieses Projekt wurde im Rahmen des KISY-Unterrichts erstellt. Ziel ist es, einen Deep Q-Learning Agenten zu trainieren, der das Spiel **LunarLander-v3** mithilfe der Bibliothek **gymnasium** meistert.
-
+![LunarLander GIF](images/lunar_lander.gif)
 ---
 
 ## 🗂️ Ordnerstruktur
