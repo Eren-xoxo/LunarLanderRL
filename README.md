@@ -109,6 +109,52 @@ Zeigt:
 
 ---
 
+## 🧮 Wie funktionieren die Rewards bei LunarLander?
+
+Das Spiel **belohnt** oder **bestraft** Aktionen basierend auf physikalisch sinnvollem Verhalten. Der Agent soll weich auf einer Plattform landen – alles andere wird bestraft.
+
+### ✅ Positive Rewards (Belohnungen)
+
+| Aktion                                   | Belohnung           | Beschreibung |
+|------------------------------------------|----------------------|--------------|
+| Sanfte Landung auf der Plattform         | +100 bis +140        | Wenn beide Beine sicher Bodenkontakt haben. |
+| Landebeine berühren Boden                | +10 pro Bein         | Auch bei Zwischenlandungen gibt es Punkte. |
+| Guter Flug in Richtung Plattform         | +0 bis +100          | Belohnung für zentriertes, langsames Sinken. |
+
+---
+
+### ❌ Negative Rewards (Strafen)
+
+| Aktion                                   | Strafe              | Beschreibung |
+|------------------------------------------|----------------------|--------------|
+| Absturz (explodieren)                    | -100 bis -150        | Bei harter oder schiefer Landung. |
+| Fliegen ohne zu landen                   | -0.03 pro Frame      | Dauerhafte Strafe, um Effizienz zu erzwingen. |
+| Aus dem Bild fliegen                     | -100                 | Wenn das Schiff das Spielfeld verlässt. |
+| Hartes Aufprallen mit einem Bein         | -5 bis -10           | Hohe Aufprallkräfte führen zu Strafe. |
+
+---
+
+### 📉 Typische Reward-Werte
+
+| Trainingsstand     | Gesamt-Reward pro Episode | Bedeutung |
+|--------------------|---------------------------|-----------|
+| Sehr schlecht      | < -2000                   | Zufällige Aktionen, schneller Absturz |
+| Lernanfang         | -1000 bis -300            | Agent bleibt länger in der Luft |
+| Erste Landungen    | -100 bis +100             | Agent lernt kontrollierte Manöver |
+| Gut trainiert      | +200 oder mehr            | Agent landet regelmäßig sicher |
+
+---
+
+📌 Hinweis:  
+Die Rewards wirken klein, aber sie summieren sich über **Hunderte Zeitschritte pro Episode**. Deshalb ist das **Gesamtverhalten** entscheidend – nicht einzelne Frames.
+
+```python
+# Beispiel zur Reward-Anzeige während Training
+print(f"Episode {ep+1}: Reward = {total_reward:.2f}")
+```
+Beispiel nach 500 Episoden
+![Beispiel reward](images/reward.png)
+
 ## 📸 Screenshots
 
 Die folgenden Screenshots wurden im Rahmen der Theorieaufgaben erstellt:
