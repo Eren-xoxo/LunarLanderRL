@@ -107,3 +107,30 @@ Zeigt:
 
 ---
 
+## 📸 Screenshots
+
+Die folgenden Screenshots wurden im Rahmen der Theorieaufgaben erstellt:
+
+### Zustand + Q-Werte (für "Deep Q-Learning definieren")
+![Beispiel Q-Werte](images/qvalues.png)
+
+Der Agent bekommt einen Beispielzustand und berechnet die dazugehörigen Q-Werte. Daraus wählt er die beste Aktion – in diesem Fall z. B. das Zünden der Hauptdüse (Aktion 2).
+
+### GUI während des Spiels
+![LunarLander GUI](images/gui_demo.png)
+
+Das Spiel zeigt die Position des Landers während des Trainings oder Replays. Die Beobachtungswerte sind im Terminal sichtbar (`features_demo.py`).
+
+---
+
+## 🎥 Video
+
+Das folgende Video zeigt den Trainingsverlauf und ein Beispiel-Replay eines trainierten Agenten.
+
+### YouTube
+
+[![Replay anschauen](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
+
+
+
+
