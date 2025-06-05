@@ -152,7 +152,10 @@ Die Rewards wirken klein, aber sie summieren sich über **Hunderte Zeitschritte 
 # Beispiel zur Reward-Anzeige während Training
 print(f"Episode {ep+1}: Reward = {total_reward:.2f}")
 ```
+
 Beispiel nach 500 Episoden
+
+
 ![Beispiel reward](images/reward.png)
 
 ## 📸 Screenshots
