@@ -180,7 +180,7 @@ Das folgende Video zeigt den Trainingsverlauf und ein Beispiel-Replay eines trai
 
 ### YouTube
 
-[![Replay anschauen](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
+[![Replay anschauen](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)]([https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID](https://youtu.be/KQriZXFt54E))
 
 
 
